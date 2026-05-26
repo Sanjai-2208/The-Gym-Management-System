@@ -1,0 +1,187 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+  padding:20px;
+  color:white;
+}
+
+/* LOGIN CONTAINER */
+
+.login-container{
+
+  width:100%;
+  max-width:450px;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+
+}
+
+/* TITLE */
+
+.login-container h1{
+
+  text-align:center;
+
+  margin-bottom:30px;
+
+  color:#ff3c41;
+
+  font-size:38px;
+
+}
+
+/* FORM */
+
+form{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:20px;
+
+}
+
+/* INPUT */
+
+form input{
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:rgba(255,255,255,0.08);
+
+  color:white;
+
+  font-size:16px;
+
+  outline:none;
+
+  border:1px solid rgba(255,255,255,0.1);
+
+}
+
+/* PLACEHOLDER */
+
+form input::placeholder{
+
+  color:#cbd5e1;
+
+}
+
+/* BUTTON */
+
+form button{
+
+  padding:15px 40px;
+
+  min-width:170px;
+
+  border:none;
+
+  outline:none;
+
+  border-radius:12px;
+
+  background:linear-gradient(45deg,#ff3c41,#ff6b6b);
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  display:block;
+
+  margin:auto;
+
+}
+
+/* BUTTON HOVER */
+
+form button:hover{
+
+  transform:scale(1.03);
+
+}
+
+/* TOAST MESSAGE */
+
+#toast{
+
+  position:fixed;
+
+  top:30px;
+
+  /* right:30px; */
+
+  background:#22c55e;
+
+  color:white;
+
+  padding:15px 25px;
+
+  border-radius:10px;
+
+  font-weight:bold;
+
+  opacity:0;
+
+  pointer-events:none;
+
+  transition:0.4s;
+
+  z-index:1000;
+
+}
+
+#toast.show{
+
+  opacity:1;
+
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+  .login-container{
+
+    padding:30px 20px;
+
+  }
+
+  .login-container h1{
+
+    font-size:30px;
+
+  }
+
+}

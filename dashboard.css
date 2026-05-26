@@ -1,0 +1,235 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+  color:white;
+  padding:30px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+/* GLASS EFFECT */
+
+.glass{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:20px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 30px;
+  margin-bottom:30px;
+}
+
+.logo{
+  font-size:32px;
+  font-weight:bold;
+  color:#ff3c41;
+  letter-spacing:3px;
+}
+
+.logout-btn{
+  padding:12px 25px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(45deg,#ff3c41,#ff6b6b);
+  color:white;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.home-btn{
+  border-radius:10px;
+  background:linear-gradient(45deg,#ff3c41,#ff6b6b);
+  color:white;
+  cursor:pointer;
+  font-weight:bold;
+  border: none;
+  padding: 12px 25px;
+}
+
+/* WELCOME SECTION */
+
+.welcome-box{
+  text-align:center;
+  padding:50px 30px;
+  margin-bottom:40px;
+}
+
+.welcome-box h1{
+  font-size:45px;
+  color:#ff3c41;
+  margin-bottom:15px;
+}
+
+.welcome-box p{
+  color:#cbd5e1;
+  margin-bottom:15px;
+  font-size:18px;
+}
+
+.status{
+  color:#22c55e;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* STATS */
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-bottom:50px;
+}
+
+.stat-card{
+  text-align:center;
+  padding:30px;
+}
+
+.stat-card h2{
+  color:#ff3c41;
+  font-size:35px;
+  margin-bottom:10px;
+}
+
+.stat-card p{
+  color:#cbd5e1;
+}
+
+/* TITLE */
+
+.title{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:30px;
+ text-decoration:underline;
+ text-decoration-color: red;
+  
+}
+
+/* CARDS */
+
+.cards{
+  /* display:grid; */
+  /* grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); */
+  display: flex;
+  justify-content:space-evenly;
+  gap:30px;
+  margin-bottom:30px;
+}
+
+.card{
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  height: 250px;
+  object-fit:fill;
+}
+
+.card-content{
+  padding:10px;
+}
+
+.card-content h2{
+  color:#ff3c41;
+  margin-bottom:10px;
+}
+
+.card-content p{
+  color:#cbd5e1;
+  line-height:1.7;
+}
+
+/* MOTIVATION */
+
+.quote-box{
+  text-align:center;
+  padding:40px;
+  margin-bottom:50px;
+}
+
+.quote-box h2{
+  color:#ff3c41;
+  margin-bottom:15px;
+}
+
+.quote{
+  font-size:24px;
+  font-style:italic;
+}
+.quote-name{
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+.footer{
+  padding:50px 30px 20px;
+}
+
+.footer-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.footer-box h2,
+.footer-box h3{
+  color:#ff3c41;
+  margin-bottom:15px;
+}
+
+.footer-box p{
+  color:#cbd5e1;
+  line-height:1.8;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:30px;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  color:#94a3b8;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .welcome-box h1{
+    font-size:32px;
+  }
+
+  .title{
+    font-size:28px;
+  }
+
+  .quote{
+    font-size:18px;
+  }
+
+}
